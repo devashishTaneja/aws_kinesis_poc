@@ -9,7 +9,7 @@ client = session.client(
     endpoint_url='http://localhost:4567'
 )
 
-f = open('data.json')
+f = open('../tmp/data.json')
 data = json.load(f)
 
 client.put_record(
